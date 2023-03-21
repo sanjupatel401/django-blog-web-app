@@ -1,0 +1,256 @@
+*{
+    background: #03001C;
+    color: #fff;
+   
+}
+
+body{
+    overflow-X: hidden;
+    transition:.5s linear;
+    
+}
+
+body::-webkit-scrollbar {
+  width: 12px;                   
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #01b3df;   
+  border-radius: 20px;      
+  border:none;  
+ 
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+
+
+/* bg =linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%); */
+
+
+
+.nav-item > .nav-link{
+    color:#fff;
+}
+
+
+.sticky{
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    height: 2.4rem;
+    transition: all 0.4s ease;
+    box-shadow: 1px 1px 30px rgba(52, 51, 51, 0.1);
+    z-index: 999;
+  }
+
+
+.dropdown-item{
+    color: #03001C;
+    background:#fff;
+}
+
+
+
+
+.welcome_page{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    
+}
+
+
+.welcome_page >h5{
+    font-size: 15px;
+    margin-bottom:1px ;
+    border-bottom: 3px solid rgb(60, 75, 89);
+}
+
+
+.welcome_page > h1{
+    font-size: 8rem;
+}
+
+
+.blog_Section{
+    width: 100vw;
+    height: auto;
+    background: #fff;
+   
+    
+}
+
+
+.blog_Section > .box{
+    height: auto;
+    background: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    margin: 15px;
+    border-radius: 0 !important;
+}
+
+
+
+
+.card > img {
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+    border-radius: 0 !important;
+}
+
+.footer{
+    width: 100%;
+    height: 3rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.footer > h2{
+    margin: auto 0;
+   
+}
+
+.footer > p{
+    margin: auto 0;
+    font-size: 20px;
+    color: rgb(167, 142, 142);
+}
+
+.footer > .icon > i{
+    font-size: 25px;
+    line-height: 3rem;
+    color: rgb(167, 142, 142);
+}
+
+
+
+
+/* ---------page style -------- */
+
+
+.page{
+  height: 100vh;
+  
+}
+
+.content{
+    padding: 20px 50px !important;
+    width: 80%;
+    height: 100vh;
+    border-right:2px solid #fff ;
+    overflow-y: scroll;
+}
+
+.content > h1{
+    text-transform: uppercase;
+}
+
+.content .text{
+  color: #fff !important;
+  background: transparent;
+}
+
+
+
+.date{
+    font-weight: 700;
+    color: rgb(69, 69, 69) !important;
+    text-transform: capitalize;
+}
+
+
+.recommend_blog{
+    width: 20vw;
+    position: fixed;
+    right: 30px;
+    border-left: 2px solid #fff;
+    height: 100vh;
+   
+    
+}
+
+
+
+/* -------------------login page--------------------- */
+
+  
+.container {
+    padding: 2rem 0rem;
+  }
+  
+  @media (min-width: 576px) {
+    .modal-dialog {
+      max-width: 400px;
+    }
+    .modal-dialog .modal-content {
+      padding: 1rem;
+    }
+  }
+  .modal-header .close {
+    margin-top: -1.5rem;
+  }
+  
+  .form-title {
+    margin: -2rem 0rem 2rem;
+  }
+  
+  .btn-round {
+    border-radius: 3rem;
+  }
+  
+  .delimiter {
+    padding: 1rem;
+  }
+  
+  .social-buttons .btn {
+    margin: 0 0.5rem 1rem;
+  }
+  
+  .signup-section {
+    padding: 0.3rem 0rem;
+  }
+
+
+
+
+/* ************media queries******************* */
+
+@media (max-width: 1250px) {
+    .content{
+        width: 100vw;
+        border: none;
+        padding: 10px 30px !important;
+        
+    }
+    .recommend_blog{
+        padding: 20px 50px !important;
+        position: relative;
+       
+       
+        
+    }
+  }
+@media (max-width: 768px) {
+    .content{
+        width: 100vw;
+        border: none;
+    }
+  }

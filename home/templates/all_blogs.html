@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+<section >
+  <div class="container">
+    <table class="table table-striped" >
+      <thead>
+        <tr>
+          <th scope="col">SR NO</th>
+          <th scope="col">BLOG NAME</th>
+          <th scope="col">UPLOAD DATE</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for d in data %}
+        <tr>
+          <th  class="text-light" scope="row">{{forloop.counter}}</th>
+          <td ><a href="{% url 'blog_page' d.slug %}" class="text-light">{{d.title}}</a></td>
+          <td  class="text-light">{{d.create_to}}</td>
+          <td  class="text-light d-flex">
+            <form action="">
+            <button class=" btn btn-warning mx-2">edit</button>
+            </form>
+             <a href="{% url 'delete_blog' d.id %}" class="btn btn-danger">delete</a>
+          </td>
+        </tr>
+        {% endfor %}
+       
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+{% endblock body %}
+
+
+
+
